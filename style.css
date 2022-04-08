@@ -18,12 +18,13 @@
 }
 
 header img {
+  padding-top: 20px;
   width: 150px;
 }
 
 header h2 {
   padding: 20px 0;
-  color: gray;
+  color: rgb(104, 104, 104);
 }
 
 header p {
