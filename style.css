@@ -30,13 +30,14 @@ header h2 {
 header p {
   color: gray;
   line-height: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 section {
@@ -46,7 +47,7 @@ section {
   align-items: center;
   /* width: 350px; */
   width: 100%;
-  height: 350px;
+  height: 300px;
   border-radius: 8px;
   text-transform: uppercase;
   margin: 15px 0;
@@ -58,7 +59,7 @@ section::before {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 section::after {
@@ -80,15 +81,102 @@ section .content {
   z-index: 1;
 }
 
-.section-1::before {
-  background: #e7899b;
-}
-
-
 .section-1 {
   background: url('images/pic01.jpg');  
   background-size: cover;
   background-position: center;
+}
+
+.section-1::before {
+  background: #e7899b;
+}
+
+.section-2 {
+  display: none;
+  background: url('images/pic02.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-2::before {
+  background: #84c8f0;
+}
+
+.section-3 {
+  display: none;
+  background: url('images/pic03.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-3::before {
+  background: #6BB2A8;
+}
+
+.section-4 {
+  display: none;
+  background: url('images/pic04.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-4::before {
+  background: #A84F7F;
+}
+
+.section-5 {
+  display: none;
+  background: url('images/pic05.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-5::before {
+  background: #B393CE;
+}
+
+.section-6 {
+  display: none;
+  background: url('images/pic06.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-6::before {
+  background: #7887C8;
+}
+
+.section-7 {
+  display: none;
+  background: url('images/pic07.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-7::before {
+  background: #76B4D7;
+}
+
+.section-8 {
+  display: none;
+  background: url('images/pic08.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-8::before {
+  background: #6CB1AB;
+}
+
+.section-9 {
+  display: none;
+  background: url('images/pic09.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-9::before {
+  background: #CC728A;
 }
 
 .section-10 {
@@ -119,4 +207,26 @@ section .content {
 
 .section-12::before {
   background: #cd76a9;
+}
+
+@media (min-width: 718px) {
+  .container {
+    max-width: 945px;
+  }
+
+  section {
+    width: 300px;
+    margin: 0 15px 15px 0;
+  }
+
+  .section-2,
+  .section-3,
+  .section-4,
+  .section-5,
+  .section-6,
+  .section-7,
+  .section-8,
+  .section-9 {
+    display: flex;
+  }
 }
