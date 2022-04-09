@@ -49,12 +49,24 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 350px; */
   width: 100%;
   height: 300px;
   border-radius: 5px;
   text-transform: uppercase;
   margin: 15px 0;
+  transition: transform 0.5s;
+}
+
+section:hover {
+  transform: scale(1.07);
+}
+
+section:hover::before {
+  opacity: 0;
+}
+
+section:hover::after {
+  opacity: 0;
 }
 
 section::before {
@@ -64,6 +76,7 @@ section::before {
   height: 100%;
   border-radius: 5px;
   opacity: 0.8;
+  transition: opacity 0.5s;
 }
 
 section::after {
@@ -75,6 +88,7 @@ section::after {
   width: 100%;
   height: 100%;
   opacity: 0.3;
+  transition: opacity 0.5s;
 }
 
 section .content {
@@ -224,13 +238,19 @@ footer h3 {
 }
 
 footer i {
+  text-align: center;
   height: 15px;
   width: 15px;
   padding: 15px;
   margin: 0 15px 15px 0;
   border: 1px solid lightgray;
   border-radius: 8px;
+  transition: 0.5s;
+}
 
+footer i:hover {
+  color: white;
+  background: lightgray;
 }
 
 input {
@@ -263,6 +283,11 @@ input[type="submit"] {
   font-weight: bold;
   letter-spacing: 5px;
   font-size: 1.2em;
+  transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+  background: lightgray;
 }
 
 footer p {
@@ -270,14 +295,14 @@ footer p {
   padding-bottom: 35px;
 }
 
-@media (min-width: 718px) {
+@media (min-width: 717px) {
   .container {
     max-width: 945px;
   }
 
   section {
-    width: 300px;
-    margin: 0 15px 15px 0;
+    width: 295px;
+    margin: 0 20px 20px 0;
   }
 
   .section-2,
